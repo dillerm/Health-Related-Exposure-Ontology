@@ -1,0 +1,9 @@
+id: hero
+title: Health-Related Exposure Ontology
+github_org: dillerm
+repo: HERO
+import_group:
+  products:
+    - id: ro
+    - id: bfo
+    - id: omrse
