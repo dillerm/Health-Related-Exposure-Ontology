@@ -5,8 +5,6 @@
 Description: The Health-Related Exposure Ontology (HERO) is an application ontology designed to facilitate the integration of data on health exposures. This ontology is being developed as part of my dissertation project and is motivated by the needs of environmental epidemiologists studying the exposome--the sum of all enviornmental factors to which a person is exposed at any point between conception and death.
 
 
-More information can be found at http://obofoundry.org/ontology/hero
-
 ## Versions
 
 ### Stable release versions
