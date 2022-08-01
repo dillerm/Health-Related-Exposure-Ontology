@@ -17,6 +17,9 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Health-Related Exposure Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/HERO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HERO_00000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HERO_00000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HERO_00000006>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -42,9 +45,29 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/HERO_0000000> (root node)
+# Class: <http://purl.obolibrary.org/obo/HERO_0000000> (environmental exposure process)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_0000000> "root node"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_0000000> "A process p that is causally upstream of some response to an external stimulus that occurs in some organism by virtue of that organism participating in p."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_0000000> "environmental exposure process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HERO_0000000> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/HERO_00000004> (environmental exposure process via physical contact)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000004> "An environmental exposure process that happens via some physical contacting between an organism and a material entity."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000004> "environmental exposure process via physical contact"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HERO_00000004> <http://purl.obolibrary.org/obo/HERO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/HERO_00000005> (environmental exposure process via contact with external environmental process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000005> "An environmental exposure process that happens via some physical contacting that is a temporal part of some process the material entity is participating in."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000005> "environmental exposure process via contact with external environmental process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HERO_00000005> <http://purl.obolibrary.org/obo/HERO_00000004>)
+
+# Class: <http://purl.obolibrary.org/obo/HERO_00000006> (physical contacting with organism)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000006> "A process in which some material entity overlaps with or is adjacent to an organism that it was previously separated from."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000006> "physical contacting with organism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HERO_00000006> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 
 )

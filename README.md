@@ -2,7 +2,7 @@
 ![Build Status](https://github.com/dillerm/HERO/workflows/CI/badge.svg)
 # Health-Related Exposure Ontology
 
-Description: The Health-Related Exposure Ontology (HERO) is an application ontology designed to facilitate the integration of data on health exposures. This ontology is being developed as part of my dissertation project and is motivated by the needs of environmental epidemiologists studying the exposome--the sum of all enviornmental factors to which a person is exposed at any point between conception and death.
+Description: The Health-Related Exposure Ontology (HERO) is an application ontology designed to facilitate the integration of data on health exposures. This ontology is being developed as part of my dissertation project and is motivated by the needs of environmental epidemiologists studying the exposome--the sum of all enviornmental factors to which a person is exposed at any point between conception and death--and both COVID-19 and hypertensive disorders of pregnancy (HDP).
 
 
 ## Versions
