@@ -1,0 +1,266 @@
+Prefix(:=<http://purl.obolibrary.org/obo/hero.owl#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/hero.owl>
+Import(<http://purl.obolibrary.org/obo/omrse.owl>)
+Import(<http://purl.obolibrary.org/obo/ro/core.owl>)
+Annotation(dcterms:description "The Health-Related Exposure Ontology (HERO) is an application ontology designed to facilitate the integration of data on exposures. This ontology is being developed as part of my dissertation project and is motivated by the needs of environmental epidemiologists studying the relationship between the exposome--the sum of all enviornmental factors to which a person is exposed at any point between conception and death--and both COVID-19 and hypertensive disorders of pregnancy (HDP)."@en)
+Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:title "Health-Related Exposure Ontology")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/HERO_00000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HERO_00000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HERO_00000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HERO_00000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000165>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000002>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000003>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000007>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000008>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000009>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000010>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000011>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000012>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000013>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000014>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000015>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000016>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000017>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000018>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000019>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002089>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002091>))
+Declaration(AnnotationProperty(dcterms:description))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"^^xsd:string)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (term editor)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "term editor"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (alternative term)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000118> "alternative term"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000412> (imported from)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000412> "imported from"@en)
+
+# Annotation Property: dcterms:description (description)
+
+AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
+AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
+AnnotationAssertion(rdfs:label dcterms:title "title")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "database_cross_reference"^^xsd:string)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> (has_obo_namespace)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "has_obo_namespace"^^xsd:string)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#inSubset> (in_subset)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#inSubset> "in_subset"^^xsd:string)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000002> (before)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000002> "before(t1, t2) iff for some temporal intervals t1, t2, and t3, if t1 meets t2 and t2 meets t3, then t1 is before t3"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/HERO_00000002> "Matthew Diller"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000002> "before"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000002> <http://purl.obolibrary.org/obo/HERO_00000019>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/HERO_00000002> <http://purl.obolibrary.org/obo/HERO_00000003>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000003> (after)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000003> "Inverse of 'before'"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/HERO_00000003> "Matthew Diller"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000003> "after"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000003> <http://purl.obolibrary.org/obo/HERO_00000018>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000007> (equals)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000007> "equals(t1,t2) iff for some temporal instants i1, i2, i3, and i4 and temporal intervals t1 and t2, i1 starts t1, i2 ends t1, i3 starts t2, i4 ends t2, i1 part-of i3, and i2 part-of i4"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000007> "equals"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000007> owl:topObjectProperty)
+SymmetricObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000007>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000007>)
+ReflexiveObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000007>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000008> (contains)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000008> "contains(t1,t2) iff for some temporal instants i1 and i2 and temporal intervals t1 and t2, i1 starts t2, i2 ends t2, i1 part-of t1, and i2 part-of t1"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000008> "contains"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000008> owl:topObjectProperty)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/HERO_00000008> <http://purl.obolibrary.org/obo/HERO_00000009>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000009> (during)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000009> "during"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000009> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000010> (interval starts)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000010> "interval-starts(t1, t2) iff for some temporal instants i1, i2, i3, and i4 and temporal intervals t1 and t2, t2 contains t1 AND i1 starts t1, i2 ends t1, i3 starts t2, i4 ends t2, i1 part-of i3, i3 precedes i2, and i2 precedes i4"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000010> "interval starts"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000010> <http://purl.obolibrary.org/obo/HERO_00000009>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/HERO_00000010> <http://purl.obolibrary.org/obo/HERO_00000017>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000011> (interval finishes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000011> "interval-finishes(t1, t2) iff for some temporal instants i1, i2, i3, and i4 and temporal intervals t1 and t2, t2 contains t1 AND i1 starts t1, i2 ends t1, i3 starts t2, i4 ends t2, i3 precedes i1, i3 precedes i2, and i2 part-of i4"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000011> "interval finishes"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000011> <http://purl.obolibrary.org/obo/HERO_00000009>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/HERO_00000011> <http://purl.obolibrary.org/obo/HERO_00000014>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000012> (overlaps)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000012> "overlaps(t1, t2) iff for some temporal instants i1, i2, i3, and i4 and temporal intervals t1 and t2, t1 meets t2, OR i1 starts t1, i2 ends t1, i3 starts t2, i4 ends t2, i1 precedes i3, i3 precedes i2, and i2 precedes i4"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000012> "overlaps"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000012> owl:topObjectProperty)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/HERO_00000012> <http://purl.obolibrary.org/obo/HERO_00000015>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000013> (meets)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000013> "meets(t1, t2) iff for some temporal instants i1, i2, and i3 and temporal intervals t1 and t2, i1 starts t1, i2 ends t1, i3 starts t2, and i2 part-of i3"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000013> "meets"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000013> <http://purl.obolibrary.org/obo/HERO_00000012>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/HERO_00000013> <http://purl.obolibrary.org/obo/HERO_00000016>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000014> (interval finished by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000014> "interval finished by"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000014> <http://purl.obolibrary.org/obo/HERO_00000019>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000015> (overlapped by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000015> "overlapped by"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000015> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000016> (met by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000016> "met by"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000016> <http://purl.obolibrary.org/obo/HERO_00000015>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000017> (interval started by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000017> "interval started by"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/HERO_00000017> <http://purl.obolibrary.org/obo/HERO_00000018>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000018> (ends after)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000018> "ends-after(t1, t2) iff for some temporal instants i1 and i2 and temporal intervals t1 and t2, i1 is the last instant of t1, i2 is the last instant of t2, and i1 after i2"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/HERO_00000018> "Matthew Diller"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000018> "ends after"@en)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000018>)
+
+# Object Property: <http://purl.obolibrary.org/obo/HERO_00000019> (starts before)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000019> "starts-before(t1, t2) iff for some temporal instants i1 and i2 and temporal intervals t1 and t2, i1 is the first instant of t1, i2 is the first instant of t2, and i1 before i2"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/HERO_00000019> "Matthew Diller"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000019> "starts before"@en)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/HERO_00000019>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002089> (starts before)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002089> "David Osumi-Sutherland")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/RO_0002089> "http://purl.obolibrary.org/obo/ro/releases/2022-10-26/ro.owl"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002089> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002089> "starts before"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002089> <http://purl.obolibrary.org/obo/RO_0002222>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002091> (starts during)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002091> "David Osumi-Sutherland")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002091> "io")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/RO_0002091> "http://purl.obolibrary.org/obo/ro/releases/2022-10-26/ro.owl"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002091> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002091> "X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y))"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002091> "starts during"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002091> <http://purl.obolibrary.org/obo/RO_0002222>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/HERO_00000001> (environmental exposure process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000001> "A process p that is causally upstream of some response to an external stimulus that occurs in some organism by virtue of that organism participating in p."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000001> "environmental exposure process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HERO_00000001> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/HERO_00000004> (environmental exposure process via physical contact)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000004> "An environmental exposure process that happens via some physical contacting between an organism and a material entity."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000004> "environmental exposure process via physical contact"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HERO_00000004> <http://purl.obolibrary.org/obo/HERO_00000001>)
+
+# Class: <http://purl.obolibrary.org/obo/HERO_00000005> (environmental exposure process via contact with external environmental process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000005> "An environmental exposure process that happens via some physical contacting that is a temporal part of some process the material entity is participating in."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000005> "environmental exposure process via contact with external environmental process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HERO_00000005> <http://purl.obolibrary.org/obo/HERO_00000004>)
+
+# Class: <http://purl.obolibrary.org/obo/HERO_00000006> (physical contacting with organism)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HERO_00000006> "A process in which some material entity overlaps with or is adjacent to an organism that it was previously separated from."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HERO_00000006> "physical contacting with organism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HERO_00000006> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000011> (age)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000011> "A time quality inhering in a bearer by virtue of how long the bearer has existed."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/PATO_0000011> "http://purl.obolibrary.org/obo/pato/releases/2022-11-09/pato.owl"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PATO_0000011> "WordNet:WordNet"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000011> "quality"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000011> "PATO:0000011"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000011> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000011> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000011> "age"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000011> <http://purl.obolibrary.org/obo/PATO_0000165>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000165> (time)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000165> "A quality in which events occur in sequence."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/PATO_0000165> "http://purl.obolibrary.org/obo/pato/releases/2022-11-09/pato.owl"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PATO_0000165> "PATOC:GVG"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000165> "quality"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000165> "PATO:0000165"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000165> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000165> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000165> "time"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000165> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
+
+)

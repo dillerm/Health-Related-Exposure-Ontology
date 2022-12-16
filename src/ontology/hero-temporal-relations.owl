@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/hero/temporal-relations.owl#"
+     xml:base="http://purl.obolibrary.org/hero/temporal-relations.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/hero/temporal-relations.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2019-08-26/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <dc:title xml:lang="en">HERO Temporal Relations</dc:title>
+        <oboInOwl:created_by xml:lang="en">Matthew Diller</oboInOwl:created_by>
+    </owl:Ontology>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000002">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000019"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000003"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">before(t1, t2) iff for some temporal intervals t1, t2, and t3, if t1 meets t2 and t2 meets t3, then t1 is before t3</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">before</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000003 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000003">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000018"/>
+        <obo:IAO_0000115 xml:lang="en">Inverse of &apos;before&apos;</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">after</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000007 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000007">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">equals(t1,t2) iff for some temporal instants i1, i2, i3, and i4 and temporal intervals t1 and t2, i1 starts t1, i2 ends t1, i3 starts t2, i4 ends t2, i1 part-of i3, and i2 part-of i4</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">equals</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000008 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000008">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000009"/>
+        <obo:IAO_0000115 xml:lang="en">contains(t1,t2) iff for some temporal instants i1 and i2 and temporal intervals t1 and t2, i1 starts t2, i2 ends t2, i1 part-of t1, and i2 part-of t1</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000009 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000009">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000010 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000010">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000009"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000017"/>
+        <obo:IAO_0000115 xml:lang="en">interval-starts(t1, t2) iff for some temporal instants i1, i2, i3, and i4 and temporal intervals t1 and t2, t2 contains t1 AND i1 starts t1, i2 ends t1, i3 starts t2, i4 ends t2, i1 part-of i3, i3 precedes i2, and i2 precedes i4</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">interval starts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000011 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000011">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000009"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000014"/>
+        <obo:IAO_0000115 xml:lang="en">interval-finishes(t1, t2) iff for some temporal instants i1, i2, i3, and i4 and temporal intervals t1 and t2, t2 contains t1 AND i1 starts t1, i2 ends t1, i3 starts t2, i4 ends t2, i3 precedes i1, i3 precedes i2, and i2 part-of i4</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">interval finishes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000012">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000015"/>
+        <obo:IAO_0000115 xml:lang="en">overlaps(t1, t2) iff for some temporal instants i1, i2, i3, and i4 and temporal intervals t1 and t2, t1 meets t2, OR i1 starts t1, i2 ends t1, i3 starts t2, i4 ends t2, i1 precedes i3, i3 precedes i2, and i2 precedes i4</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">overlaps</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000013 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000013">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000012"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000016"/>
+        <obo:IAO_0000115 xml:lang="en">meets(t1, t2) iff for some temporal instants i1, i2, and i3 and temporal intervals t1 and t2, i1 starts t1, i2 ends t1, i3 starts t2, and i2 part-of i3</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">meets</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000014 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000014">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000019"/>
+        <rdfs:label xml:lang="en">interval finished by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000015 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000015">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">overlapped by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000016 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000016">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000015"/>
+        <rdfs:label xml:lang="en">met by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000017 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000017">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000018"/>
+        <rdfs:label xml:lang="en">interval started by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000018">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">ends-after(t1, t2) iff for some temporal instants i1 and i2 and temporal intervals t1 and t2, i1 is the last instant of t1, i2 is the last instant of t2, and i1 after i2</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">ends after</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000019 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000019">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">starts-before(t1, t2) iff for some temporal instants i1 and i2 and temporal intervals t1 and t2, i1 is the first instant of t1, i2 is the first instant of t2, and i1 before i2</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">starts before</rdfs:label>
+    </owl:ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

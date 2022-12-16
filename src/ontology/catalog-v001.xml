@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-
-  
-  <uri name="http://purl.obolibrary.org/obo/hero/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/hero/imports/ro_import.obo" uri="imports/ro_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/hero/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/hero/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/hero/imports/omrse_import.owl" uri="imports/omrse_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/hero/imports/omrse_import.obo" uri="imports/omrse_import.obo"/>
-  
-
-
-  
-
-</group>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/geo/us-basic-geography.owl" uri="https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-basic-geography.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omrse/language-individuals/" uri="https://raw.githubusercontent.com/ufbmi/OMRSE/main/src/ontology/components/language/language-individuals.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1671179135329" name="http://purl.obolibrary.org/hero/temporal-relations.owl" uri="hero-temporal-relations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1671179135329" name="http://purl.obolibrary.org/obo/hero.owl" uri="hero-edit.owl"/>
+    </group>
 </catalog>
