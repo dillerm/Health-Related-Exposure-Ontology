@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obo1="http://purl.org/obo/owl/obo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -39,6 +40,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000052 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000052">
+        <rdfs:label xml:lang="en">VEuPathDB alternative label</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -93,6 +102,8 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
         <rdfs:label>term editor</rdfs:label>
         <rdfs:label xml:lang="en">term editor</rdfs:label>
     </rdf:Description>
@@ -124,6 +135,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <rdfs:label>term tracker item</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
@@ -137,6 +156,37 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
         <rdfs:label xml:lang="en">elucidation</rdfs:label>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002161 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002161"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175">
+        <rdfs:label xml:lang="en">present in taxon</rdfs:label>
+        <rdfs:label>present_in_taxon</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001">
+        <rdfs:label>external_definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000007 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000007">
+        <rdfs:label>has_relational_adjective</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -198,6 +248,14 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/type">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:type</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
@@ -222,9 +280,45 @@
     
 
 
+    <!-- http://purl.org/spar/cito/citesAsAuthority -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/spar/cito/citesAsAuthority"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">created_by</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creation_date</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date_retrieved -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date_retrieved"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_class -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_class"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -247,6 +341,7 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
     </rdf:Description>
     
@@ -276,9 +371,19 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType">
+        <rdfs:label>has_synonym_type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -290,13 +395,38 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#ontology -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ontology"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#xref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#xref"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:label>label</rdfs:label>
         <rdfs:label xml:lang="en">label</rdfs:label>
     </rdf:Description>
-    
     
 
 
@@ -311,9 +441,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_0000000017 -->
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000086 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_0000000017"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115 xml:lang="en">A plan specification whose objective specification is an infectious disease control objective specification.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/releases/v2023-01-10/apollo_sv.owl</obo:IAO_0000412>
+        <obo:IAO_0000600 xml:lang="en">A plan with the goal of preventing or mitigating the effects of infections in a population due to one or more pathogens.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InfectiousDiseaseControlMeasure</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:comment xml:lang="en">The essential goal of an infectious disease control strategy is to protect the susceptible organisms in a population.</rdfs:comment>
+        <rdfs:label xml:lang="en">infectious disease control strategy</rdfs:label>
+    </owl:Class>
     
 
 
@@ -355,6 +493,61 @@
         <apollo_sv:APOLLO_SV_0000040 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BioticEcosystem</apollo_sv:APOLLO_SV_0000040>
         <dce:creator xml:lang="en">William R. Hogan</dce:creator>
         <rdfs:label xml:lang="en">biotic ecosystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000115 xml:lang="en">A place-closure control strategy that decides on a case-by-case basis whether to close places of a certain type, as opposed to blanket policy that closes all places of a certain type at the same time.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/releases/v2023-01-10/apollo_sv.owl</obo:IAO_0000412>
+        <obo:IAO_0000600 xml:lang="en">A place-closure control strategy that decides on a case-by-case basis whether to close places of a certain type, as opposed to blanket policy that closes all places of a certain type at the same time.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">closeIndividualPlacesIndependently</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">close individual places independently strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000327 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000327">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000086"/>
+        <obo:IAO_0000111 xml:lang="en">quarantine control strategy</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/releases/v2023-01-10/apollo_sv.owl</obo:IAO_0000412>
+        <obo:IAO_0000600 xml:lang="en">An infectious disease control strategy whereby organisms who have had contact with infectious organisms but are not symptomatic or otherwise known to be infectious are prevented from having contact with other susceptible organisms.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">quarantine control strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000115>Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism&apos;s own genome.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon/releases/2023-04-19/uberon.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>CC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>spatial</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CARO:0000003</oboInOwl:id>
+        <rdfs:comment>Note that the definition does not say &apos;generated exclusively by the co-ordinated expression of the organism&apos;s own genome&apos;, so this is still valid for cases where normal morphogenesis requires the actions of a facultative symbiont, or some looser dependency such as the a requirement for the presence of gut flora for normal gut development.</rdfs:comment>
+        <rdfs:label>anatomical structure</rdfs:label>
+        <rdfs:label>connected anatomical structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <obo:IAO_0000115>An anatomical structure that has more than one cell as a part.</obo:IAO_0000115>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon/releases/2023-04-19/uberon.owl</obo:IAO_0000412>
+        <oboInOwl:id>CARO:0010000</oboInOwl:id>
+        <rdfs:label>multicellular anatomical structure</rdfs:label>
     </owl:Class>
     
 
@@ -3828,6 +4021,139 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_0014667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0014667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease that involving errors in metabolic processes of building or degradation of molecules.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/doid/releases/2023-03-31/doid.owl</obo:IAO_0000412>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007646"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:E88.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9CM:277.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D008659</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI:C3235</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US_2022_09_01:75934005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS_CUI:C0025517</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.ncbi.nlm.nih.gov/books/NBK22259/</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">metabolic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0014667</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_AGR_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_CFDE_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_GXD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease of metabolism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0060158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0060158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0014667"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease of metabolism that has_material_basis_in enzyme deficiency or accumulation of enzymes or toxins which interfere with normal function due to an endocrine organ disease, organ malfunction, inadequate intake, dietary deficiency, or malabsorption.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/doid/releases/2023-03-31/doid.owl</obo:IAO_0000412>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007636"/>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lschriml</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-08-24T02:53:03Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://en.wikipedia.org/wiki/Inborn_error_of_metabolism</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.ncbi.nlm.nih.gov/mesh/68008659</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0060158</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_MGI_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acquired metabolic disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0060158"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An acquired metabolic disease that is characterized by an insufficient intake of food or of certain nutrients, by an inability of the body to absorb and use nutrients, or by overconsumption of certain foods.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/doid/releases/2023-03-31/doid.owl</obo:IAO_0000412>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009748</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI:C26836</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US_2022_09_01:191077005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS_CUI:C3714509</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://www.who.int/topics/nutrition_disorders/en/</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Nutritional disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:374</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutrition disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/doid/releases/2023-03-31/doid.owl</obo:IAO_0000412>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D004194</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI:C2991</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US_2022_09_01:64572001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS_CUI:C0012634</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041577/</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:4</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_654 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_654">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_374"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nutrition disease that is characterized by an excess of a nutritional element, such as a vitamin, mineral, carbohydrate, protein, fat, or general energy content.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/doid/releases/2023-03-31/doid.owl</obo:IAO_0000412>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D044343</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US_2022_09_01:302872003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS_CUI:C1257763</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://en.wikipedia.org/wiki/Overnutrition</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:654</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Updated outdated UMLS CUI.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overnutrition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9970 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_9970">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_654"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An overnutrition that is characterized by excess body fat, traditionally defined as an elevated ratio of weight to height (specifically 30 kilograms per meter squared), has_material_basis_in a multifactorial etiology related to excess nutrition intake, decreased caloric utilization, and genetic susceptibility, and possibly medications and certain disorders of metabolism, endocrine function, and mental illness.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/doid/releases/2023-03-31/doid.owl</obo:IAO_0000412>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0001073</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD10CM:E66.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9CM:278.00</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009765</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI:C159658</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM:601665</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT_US_2022_09_01:5476005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS_CUI:C0028754</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://en.wikipedia.org/wiki/Obesity</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:9970</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_FlyBase_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OMIM mapping confirmed by DO. [SN].</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obesity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_00002005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002005">
@@ -4209,6 +4535,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_02000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>A planned process that is the movement of people, animals and goods from one location to another.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/envo/releases/2023-02-13/envo.owl</obo:IAO_0000412>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Transport"/>
+        <rdfs:label>transportation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_02000140 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000140">
@@ -4245,6 +4584,52 @@
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:comment>Experimental class for structural purposes not recommended for annotation.</rdfs:comment>
         <rdfs:label xml:lang="en">material transport process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000115>A one-dimensional temporal region which is delimited by the occurrence of processes which serve as its delimiters.</obo:IAO_0000115>
+        <obo:IAO_0000116>Season could be implemented as a subclass of one-dimensional temporal region, however, this will need further thought and discussion with BFO editors.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-3410-4655</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/envo/releases/2023-02-13/envo.owl</obo:IAO_0000412>
+        <oboInOwl:inSubset>envoAstro</oboInOwl:inSubset>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:label xml:lang="en">season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000096"/>
+        <obo:IAO_0000115>A season during which the average temperature of a planetary part exceeds that of all other seasons it endures during a season generating process.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-3410-4655</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/envo/releases/2023-02-13/envo.owl</obo:IAO_0000412>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:comment>The boundaries of seasons are typically fiat and should be defined on a data/information layer. This also pertains to the amount of time included when averaging measured values of qualities like temperature.</rdfs:comment>
+        <rdfs:label xml:lang="en">warm season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000096"/>
+        <obo:IAO_0000115>A season during which the average temperature of a planetary part is below that of all other seasons it endures during a season generating process.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-4366-3088"/>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-3410-4655</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/envo/releases/2023-02-13/envo.owl</obo:IAO_0000412>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:comment>The boundaries of seasons are typically fiat and should be defined on a data/information layer. This also pertains to the amount of time included when averaging measured values of qualities like temperature.</rdfs:comment>
+        <rdfs:label xml:lang="en">cold season</rdfs:label>
     </owl:Class>
     
 
@@ -4302,12 +4687,117 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:EUPATH_0000052>Marital status</obo:EUPATH_0000052>
+        <obo:IAO_0000115 xml:lang="en">a categorical value specification that is about a human being and specifies whether that human being is joined to another human being in marriage</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000119>EuPathDB, BFO&apos;s &apos;relational quality&apos; examples</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/eupath/2023-03-20/eupath.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">marital status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009566 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009566">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0022414"/>
+        <obo:IAO_0000115>The union of gametes of opposite sexes during the process of sexual reproduction to form a zygote. It involves the fusion of the gametic nuclei (karyogamy) and cytoplasm (plasmogamy).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/20176</obo:IAO_0000233>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/go/releases/2023-04-01/go.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Fertilisation</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>syngamy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0009566</oboInOwl:id>
+        <rdfs:label>fertilization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0022414 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0022414">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>A biological process that directly contributes to the process of producing new individuals by one or two organisms. The new individuals inherit some proportion of their genetic material from the parent or parents.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/go/releases/2023-04-01/go.owl</obo:IAO_0000412>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-09-19T15:56:06Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0044702</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single organism reproductive process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0022414</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <rdfs:label>reproductive process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any biological process, occurring at the level of a multicellular organism, pertinent to its function.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/go/releases/2023-04-01/go.owl</obo:IAO_0000412>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2157"/>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4896"/>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4932"/>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-09-19T16:07:47Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0044707</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0050874</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>organismal physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single-multicellular organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0032501</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <rdfs:label>multicellular organismal process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HERO_00000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A process p that is causally upstream of some response to an external stimulus that occurs in some organism by virtue of that organism participating in p.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">environmental exposure process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000125"/>
+        <obo:IAO_0000115 xml:lang="en">A transportation in which an individual utilizes a vehicle that is owned and operated by a government organization.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
+        <rdfs:label xml:lang="en">use of public transportation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A data item that is about the number of individuals who use public transport in a particular geographical region and time period.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
+        <rdfs:label xml:lang="en">public transportation utilization datum</rdfs:label>
     </owl:Class>
     
 
@@ -4338,6 +4828,90 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A process in which some material entity overlaps with or is adjacent to an organism that it was previously separated from.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">physical contacting with organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0022414"/>
+        <obo:IAO_0000115 xml:lang="en">The aggregate of reproductive processes that realize the function of some sexual organs and in which an embryo or fetus develops within an organism, starting with fertilizaton of an ovum and ending with birth.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
+        <rdfs:label xml:lang="en">pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A one-dimensional temporal region that is part of a person&apos;s history and overlaps with the one-dimensional temporal region occupied by a pregnancy, beginnning on the first day of the menstrual period immediately preceeding the pregnancy and ending on the last day of the 13th week of the pregnancy.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
+        <rdfs:label xml:lang="en">first trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A one-dimensional temporal region that is part of a person&apos;s history and is during the one-dimensional temporal region occupied by a pregnancy, beginnning on the first day of the 13th week of the pregnancy and ending on the last day of the 26th week.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
+        <rdfs:label xml:lang="en">second trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A one-dimensional temporal region that is part of a person&apos;s history and is during or ends the one-dimensional temporal region occupied by a pregnancy, beginnning on the first day of the 27th week of the pregnancy and ending on the last day of the 40th week.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
+        <rdfs:label xml:lang="en">third trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter that realizes patient roles inhering in both a pregnant individual and a fetus.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
+        <rdfs:label xml:lang="en">prenatal care encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A data item that is about the 12 month one-dimensional temporal region in which a fertilization process occurred within a patient.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
+        <rdfs:label xml:lang="en">year of conception data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is about the mass inhering in a human and is either calculated from dividing an individual&apos;s weight by the square of their height or is estimated based on an individual&apos;s total body fat.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dce:contributor xml:lang="en">William R. Hogan</dce:contributor>
+        <rdfs:label xml:lang="en">body mass index</rdfs:label>
     </owl:Class>
     
 
@@ -4600,6 +5174,54 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NBO_0000313 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000313">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <obo:IAO_0000115>&quot;The action, reaction, or performance of an organism in response to external or internal stimuli.&quot; [GO:GO\:0007610]</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/nbo/releases/2023-02-21/nbo.owl</obo:IAO_0000412>
+        <dce:date>2011-04-05T09:53:10Z</dce:date>
+        <oboInOwl:created_by>George Gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasAlternativeId>NBO:0000000</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>behavior</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>behaviour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>behavior_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:xref>GO:0007610</oboInOwl:xref>
+        <rdfs:label>behavior process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0001845 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0001845">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000313"/>
+        <obo:IAO_0000115>Behavior related to the intake of substances.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/nbo/releases/2023-02-21/nbo.owl</obo:IAO_0000412>
+        <oboInOwl:created_by>George Gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasBroadSynonym>ingest</oboInOwl:hasBroadSynonym>
+        <oboInOwl:source>NBOC:GVG</oboInOwl:source>
+        <rdfs:label xml:lang="en">consumption behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0015005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0015005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0001845"/>
+        <obo:IAO_0000115>Consumption behavior that involves burning a substance and inhaling the particulate and gas suspension emitted.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/nbo/releases/2023-02-21/nbo.owl</obo:IAO_0000412>
+        <dce:contributor>0000-0002-4277-2151</dce:contributor>
+        <dce:contributor>http://orcid.org/0000-0002-2908-3327</dce:contributor>
+        <dce:date>2019-09-06T10:51:02Z</dce:date>
+        <cito:citesAsAuthority>https://en.wikipedia.org/wiki/Smoking</cito:citesAsAuthority>
+        <oboInOwl:created_by>https://orcid.org/0000-0002-7356-1779</oboInOwl:created_by>
+        <rdfs:label xml:lang="en">smoking behavior</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001167 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001167">
@@ -4672,6 +5294,40 @@ All subtype will be defined by textual definition now.</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
+        <obo:IAO_0000115>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s vertical dimension of extension.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/pato/releases/2023-02-17/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000119</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>height</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001035"/>
+        <obo:IAO_0000115>A physical quality inhering in a bearer that has mass near a gravitational body. Important usage note: Note that this ontology has a class for a similar concept, mass (PATO:0000125). Mass and weight are not equivalent. For most use cases, the class mass is strongly preferred over weight.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/pato/releases/2023-02-17/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Weight</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Mass#Weight_vs._mass</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000128</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>For any biological use of PATO, the concept that should be used is &apos;mass&apos; and not &apos;weight&apos;. For example, increased weight of an organism.</rdfs:comment>
+        <rdfs:label>weight</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000146 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
@@ -4732,6 +5388,39 @@ All subtype will be defined by textual definition now.</obo:IAO_0000232>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001025</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s rate of change of momentum.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/pato/releases/2023-02-17/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>thesaurus.maths:thesaurus.maths</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>force amplitude</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001035</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>force</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001708">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000115>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in one dimension.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/pato/releases/2023-02-17/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>1-D size</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001708</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>1-D extent</rdfs:label>
     </owl:Class>
     
 
@@ -4799,6 +5488,146 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>Anatomical entity that has mass.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon/releases/2023-04-19/uberon.owl</obo:IAO_0000412>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasDbXref>AAO:0010264</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00007016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:67165</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001836</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001826</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0001721</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0000465</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>material anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>Anatomical structure that is an individual member of a species and consists of more than one cell.</obo:IAO_0000115>
+        <obo:IAO_0000116>TODO - split body and mc organism? body continues after death stage</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon/releases/2023-04-19/uberon.owl</obo:IAO_0000412>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <obo:UBPROP_0000007>organismal</obo:UBPROP_0000007>
+        <oboInOwl:hasBroadSynonym>organism</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>AAO:0010026</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000103</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000191</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BIRNLEX:18</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BSA:0000038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000042</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0001489</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0002906</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003103</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003191</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:25765</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EV:0100016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:256135</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13041</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:243928005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TADS:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001094</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001832</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0000671</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0007833</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Multi-cellular_organism</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0003004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0001094</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Organism</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ncithesaurus:Whole_Organism</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>multi-cellular organism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Koerper</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>body</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>whole body</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>whole organism</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000468</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>multicellular organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
+        <obo:IAO_0000115>A multicellular organism that existence_ends_with a post-juvenile adult stage and existence_starts_with a post-juvenile adult stage.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon/releases/2023-04-19/uberon.owl</obo:IAO_0000412>
+        <obo:UBPROP_0000001>Whole organism that is fully grown or sexually mature.[TAO]</obo:UBPROP_0000001>
+        <oboInOwl:date_retrieved>2012-08-14</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>TAO:0002046</oboInOwl:external_class>
+        <oboInOwl:hasBroadSynonym>adult</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>BILA:0000078</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00003004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000087</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C17600</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0002046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0001675</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Adult</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://neurolex.org/wiki/Category:Adult_organism</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>adults</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#PLURAL"/>
+        <oboInOwl:id>UBERON:0007023</oboInOwl:id>
+        <oboInOwl:ontology>TAO</oboInOwl:ontology>
+        <oboInOwl:source>TAO:wd</oboInOwl:source>
+        <oboInOwl:source>ncithesaurus:Adult</oboInOwl:source>
+        <rdfs:label>adult organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0009097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007023"/>
+        <obo:IAO_0000115>An organism containing a developing embryo, fetus, or unborn offspring within the body.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon/releases/2023-04-19/uberon.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>BTO:0004733</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>gravid</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pregnant adult</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pregnant adult stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pregnant organism</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pregnant stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0009097</oboInOwl:id>
+        <rdfs:label>gravid organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -4813,7 +5642,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_0000000021 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_0000000021">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_0000000017"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
         <obo:BFO_0000137 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_0000000023"/>
         <obo:IAO_0000111 xml:lang="en">human population in region of the United States</obo:IAO_0000111>
         <rdfs:label xml:lang="en">humans in the United States</rdfs:label>
