@@ -1,206 +1,207 @@
-// HERO temporal relations axiomatization, created 2022-12-12
-// Author: Matthew Diller - diller17@ufl.edu
+// HERO Temporal Relations Axiomatization, created 2022-12-12
+// Author: Matthew Diller - diller17(at)ufl.edu"
 
+	(cl:text https://github.com/dillerm/Health-Related-Exposure-Ontology/tree/main/srsc/common-logic/hero-temporal-relations.clif
 
-// ******************************************
-// MEETS / IS-MET-BY
-// ******************************************
+		(cl:imports https://basic-formal-ontology.org/2020/formulas/clif/temporal-region.cl)
 
+			(cl-outdiscourse meets is-met-by before after overlaps overlapped-by contains contained-by encloses enclosed-by interval-finishes interval-finished-by interval-starts interval-started-by equals ends-after starts-before)
 
-// For some temporal instants f1, l1, and f2 and temporal intervals t1 and t2, if f1 first-instant-of t1, l1 last-instant-f t1, f2
-// first-instant-of t2, and l1 equals f2, then t1 meets t2 [inm-1]
-(forall (f1 l1 f2 t1 t2) 
-	(if (and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1) 
-		(instance-of f2 temporal-instant f2) (instance-of t1 temporal-interval t1) 
-		(instance-of t2 temporal-interval t2) (has-first-instant t1 f1) 
-		(has-last-instant t1 l1) (has-first-instant t2 f2) (= l1 f2)) 
-	(t1 meets t2)))
+		(cl:comment "For some temporal instants f1, l1, and f2 and temporal intervals t1 and t2, if f1 first-instant-of t1, l1 last-instant-f t1, f2 first-instant-of t2, and l1 equals f2, then t1 meets t2 [inm-1]"
+		(forall (f1 l1 f2 t1 t2) 
+			(if 
+				(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1) 
+					(instance-of f2 temporal-instant f2) (instance-of t1 temporal-interval t1) 
+					(instance-of t2 temporal-interval t2) (has-first-instant t1 f1) 
+					(has-last-instant t1 l1) (has-first-instant t2 f2) (= l1 f2)) 
+				(meets t1 t2))))
 
+		(cl:comment "The inverse of 'meets' is 'is-met-by' [inm-2]"
+			(forall (a b) (iff (meets a b) (is-met-by b a))))
 
-// The inverse of 'meets' is 'is-met-by' [inm-2]
-(forall (a b) (iff (meets a b) (is-met-by b a)))
+		(cl:comment "meets has domain 'temporal region' and range 'temporal region' [inm-3]"
+			(forall (a b)
+			    (if (meets a b)
+			    	(and (exists (t) (instance-of a temporal-region t))
+			    		(exists (t) (instance-of b temporal-region t))))))
 
+		(cl:comment "For some temporal intervals t1, t2, and t3, if t1 meets t2 and t2 meets t3, then t1 is before t3 [inb-1]"
+			(forall (t1 t2 t3)
+				(if
+					(and (instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
+						(instance-of t3 temporal-interval t3) (meets t1 t2) (meets t2 t3))
+					(before t1 t3))))
 
-// ******************************************
-// BEFORE / AFTER
-// ******************************************
+		(cl:comment "'before' is transitive [inb-2]"
+			(forall (a b c)
+				(if
+					(and (before a b) (before b c))
+					(before a c))))
 
+		(cl:comment "The inverse of 'before' is 'after' [inb-3]"
+			(forall (a b) (iff (before a b) (after b a))))
 
-// For some temporal intervals t1, t2, and t3, if t1 meets t2 and t2 meets t3, then t1 is before t3 [inb-1]
-(forall (t1 t2 t3)
-	(if
-		(and (instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
-			(instance-of t3 temporal-interval t3) (t1 meets t2) (t2 meets t3))
-		(t1 before t3)))
+		(cl:comment "before has domain 'temporal region' and range 'temporal region' [inb-4]"
+			(forall (a b)
+	     (if (before a b)
+	     	(and (exists (t) (instance-of a temporal-region t))
+	     		(exists (t) (instance-of b temporal-region t))))))
 
+		(cl:comment "For some temporal instants f1, l1, f2, and l2 and temporal intervals t1 and t2, if t1 meets t2 or f1 is the first instant of t1, l1 is the last instant of t1, f2 is the first instant of t2, l2 is the last instant of t2, f1 before l1, f2 before l1, and l1 before l2, then t1 overlaps t2 [ino-1]"
+			(forall (f1 l1 f2 l2 t1 t2)
+				(if
+					(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
+						(instance-of f2 temporal-instant f2) (instance-of l2 temporal-instant l2)
+						(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
+						(or (meets t1 t2)
+							(and (first-instant-of f1 t1) (last-instant-of l1 t1)
+							(first-instant-of f2 t2) (last-instant-of l2 t2)
+							(before f1 l1) (before f2 l1)
+							(before l1 l2))))
+					(overlaps t1 t2))))
 
-// 'before' is transitive [inb-2]
-(forall (a b c)
-	(if
-		(and (a before b) (b before c))
-		(a before c)))
+		(cl:comment "The inverse of 'overlaps' is 'overlapped-by' [ino-2]"
+			(forall (a b) (iff (overlaps a b) (overlapped-by b a))))
 
+		(cl:comment "overlaps has domain 'temporal region' and range 'temporal region' [ino-3]"
+			(forall (a b)
+		    	(if (overlaps a b)
+		    		(and (exists (t) (instance-of a temporal-region t))
+		    		(exists (t) (instance-of b temporal-region t))))))
 
-// The inverse of 'before' is 'after' [inb-3]
-(forall (a b) (iff (before a b) (after b a)))
+		(cl:comment "For some temporal instants f1 and l1 and temporal intervals t1 and t2, if f1 is the first instant of t2, l1 is the last instant of t2, f1 is a temporal part of t1, and l1 is a temporal part of t1, then t1 contains t2 [inc-1]"
+			(forall (f1 l1 t1 t2)
+				(if
+					(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
+						(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
+						(first-instant-of f1 t2) (last-instant-of l1 t2)
+						(temporal-part-of f1 t1) (temporal-part-of l1 t1))
+					(contains t1 t2))))
 
+		(cl:comment "The inverse of 'contains' is 'contained-by' [inc-2]"
+			(forall (a b) (iff (contains a b) (contained-by b a))))
 
-// ******************************************
-// OVERLAPS / OVERLAPPED-BY 
-// ******************************************
+		(cl:comment "'contains' has domain 'temporal region' and range 'temporal region' [ind-3]"
+			(forall (a b)
+			    (if (contains a b)
+			    	(and (exists (t) (instance-of a temporal-region t))
+			    	(exists (t) (instance-of b temporal-region t))))))
 
+		(cl:comment "For some temporal instants f1, l1, f2, and l2 and some temporal intervals t1 and t2, if f1 is the first instant of t1, l1 is the last instant of t1, f2 is the first instant of t2, l2 is the last instant of t2, f2 before f1, and l1 before l2, then t1 enclosed-by t2 [enc-1]"
+			(forall (f1 l1 f2 l2 t1 t2)
+			     (if
+			          (and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
+			               (instance-of f2 temporal-instant f2) (instance-of l2 temporal-instant l2)
+			               (instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
+			               (first-instant-of f1 t1) (last-instant-of l1 t1)
+			               (before f2 t1) (before l1 l2))
+			          (enclosed-by t1 t2))))
 
-// For some temporal instants f1, l1, f2, and l2 and temporal intervals t1 and t2, if t1 meets t2 or f1 is the first instant of t1, l1 
-// is the last instant of t1, f2 is the first instant of t2, l2 is the last instant of t2, f1 precedes l1, f2 precedes l1, and l1 
-// precedes l2, then t1 overlaps t2 [ino-1]
-(forall (f1 l1 f2 l2 t1 t2)
-	(if
-		(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
-			(instance-of f2 temporal-instant f2) (instance-of l2 temporal-instant l2)
-			(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
-			(or (t1 meets t2)
-				(and (f1 first-instant-of t1) (l1 last-instant-of t1)
-				(f2 first-instant-of t2) (l2 last-instant of-t2)
-				(f1 precedes l1) (f2 precedes l1)
-				(l1 precedes l2))))
-		(t1 overlaps t2)))
+		(cl:comment "The inverse of 'enclosed-by' is 'encloses' [enc-2]"
+			(forall (a b) (iff (enclosed-by a b) (encloses b a))))
 
+		(cl:comment "enclosed-by has domain 'temporal region' and range 'temporal region' [enc-3]"
+			(forall (a b)
+		    	(if (enclosed-by a b)
+		    		(and (exists (t) (instance-of a temporal-region t))
+		    		(exists (t) (instance-of b temporal-region t))))))
 
-// The inverse of 'overlaps' is 'overlapped-by' [ino-2]
-(forall (a b) (iff (overlaps a b) (overlapped-by b a)))
+		(cl:comment "For some temporal instants f1, l1, f2, and l2 and temporal intervals t1 and t2, if t2 contains t1, f1 is the first instant of t1, l1 is the last instant of t1, f2 is the first instant of t2, l2 is the last instant of t2, f2 before f1, f2 before l1, and l1 equals l2, then t1 finishes t2 [inf-1]"
+			(forall (f1 l1 f2 l2 t1 t2)
+				(if
+					(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
+						(instance-of f2 temporal-instant f2) (instance-of l2 temporal-instant l2)
+						(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
+						(before f2 f1) (before f2 l1) (= l1 l2))
+					(interval-finishes t1 t2))))
 
+		(cl:comment "The inverse of 'interval-finishes' is 'interval-finished-by' [inf-2]"
+			(forall (a b) (iff (interval-finishes a b) (interval-finished-by b a))))
 
-// ******************************************
-// CONTAINS / CONTAINED-BY 
-// ******************************************
+		(cl:comment "interval-finishes has domain 'temporal region' and range 'temporal region' [inf-3]"
+			(forall (a b)
+			    (if (interval-finishes a b)
+				    (and (exists (t) (instance-of a temporal-region t))
+				    (exists (t) (instance-of b temporal-region t))))))
 
+		(cl:comment "For some temporal instants f1, l1, f2, and l2 and temporal intervals t1 and t2, if t2 contains t1, f1 is the first instant of t1, l1 is the last instant of t1, f2 is the first instant of t2, l2 is the last instant of t2, f1 equals f2, f2 before l1, and l1 before l2, then t1 starts t2 [ins-1]"
+			(forall (f1 l1 f2 l2 t1 t2)
+				(if
+					(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
+						(instance-of f2 temporal-instant f2) (instance-of l2 temporal-instant l2)
+						(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
+						(= f1 f2) (before f2 l1) (before l1 l2))
+					(interval-starts t1 t2))))
 
-// For some temporal instants f1 and l1 and temporal intervals t1 and t2, if f1 is the first instant of t2, l1 is the last instant of t2, 
-// f1 is a temporal part of t1, and l1 is a temporal part of t1, then t1 contains t2 [inc-1]
-(forall (f1 l1 t1 t2)
-	(if
-		(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
-			(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
-			(f1 first-instant-of t2) (l1 last-instant-of t2)
-			(f1 temporal-part-of t1) (l1 temporal-part-of t1))
-		(t1 contains t2)))
+		(cl:comment "The inverse of 'interval-starts' is 'interval-started-by' [ins-2]"
+			(forall (a b) (iff (interval-starts a b) (interval-started-by b a))))
 
+		(cl:comment "interval-starts has domain 'temporal region' and range 'temporal region' [ins-3]"
+			(forall (a b)
+			    (if (interval-starts a b)
+				    (and (exists (t) (instance-of a temporal-region t))
+				    (exists (t) (instance-of b temporal-region t))))))
 
-// The inverse of 'contains' is 'contained-by' [inc-2]
-(forall (a b) (iff (contains a b) (contained-by b a)))
+		(cl:comment "For some temporal instants f1, l1, f2, and l2 and temporal intervals t1 and t2, if f1 is the first instant of t1, l1 is the last instant of t1, f2 is the first instant of t2, l2 is the last instant of t2, f1 equals f2, and l1 equals l2, then t1 equals t2 [eqd-1]"
+			(forall (f1 l1 f2 l2 t1 t2)
+				(if
+					(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
+						(instance-of f2 temporal-instant f2) (instance-of l2 temporal-instant l2)
+						(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
+						(= f1 f2) (= l1 l2))
+					(equals t1 t2))))
 
+		(cl:comment "'equals' is reflexive [eqd-2]"
+			(forall (a)
+				(if (exists (t) (instance-of a temporal-interval t)) (equals a a))))
 
-// ******************************************
-// INTERVAL-FINISHES / INTERVAL-FINISHED-BY 
-// ******************************************
+		(cl:comment "'equals' is symmetric [eqd-3]"
+			(forall (a b)
+				(iff (equals a b) (equals b a))))
 
+		(cl:comment "equals has domain 'temporal region' and range 'temporal region' [eqd-4]"
+			(forall (a b)
+			    (if (equals a b)
+			    	(and (exists (t) (instance-of a temporal-region t))
+			    	(exists (t) (instance-of b temporal-region t))))))
 
-// For some temporal instants f1, l1, f2, and l2 and temporal intervals t1 and t2, if t2 contains t1, f1 is the first instant of t1, l1 
-// is the last instant of t1, f2 is the first instant of t2, l2 is the last instant of t2, f2 precedes f1, f2 precedes l1, and l1 equals 
-// l2, then t1 finishes t2 [inf-1]
-(forall (f1 l1 f2 l2 t1 t2)
-	(if
-		(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
-			(instance-of f2 temporal-instant f2) (instance-of l2 temporal-instant l2)
-			(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
-			(f2 precedes f1) (f2 precedes l1) (= l1 l2))
-		(t1 interval-finishes t2)))
+		(cl:comment "For some temporal instants l1 and l2 and temporal intervals t1 and t2, if l1 is the last instant of t1, l2 is the last instant of t2, and l1 after l2, then t1 ends-after t2 [ead-1]"
+			(forall (l1 l2 t1 t2)
+				(if
+					(and (instance-of l1 temporal-instant l1) (instance-of l2 temporal-instant l2)
+						(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
+						(last-instant-of l1 t1) (last-instant-of l2 t2) (after l1 l2))
+					(ends-after t1 t2))))
 
+		(cl:comment "'ends-after' is transitive [ead-2]"
+			(forall (a b c)
+				(if
+					(and (ends-after a b) (ends-after b c))
+					(ends-after a c))))
 
-// The inverse of 'interval-finishes' is 'interval-finished-by' [inf-2]
-(forall (a b) (iff (interval-finishes a b) (interval-finished-by b a)))
+		(cl:comment "ends-after has domain 'temporal region' and range 'temporal region' [ead-3]"
+			(forall (a b)
+			    (if (ends-after a b)
+			    	(and (exists (t) (instance-of a temporal-region t))
+			    	(exists (t) (instance-of b temporal-region t))))))
 
+		(cl:comment "For some temporal instants l1 and l2 and temporal intervals t1 and t2, if l1 is the first instant of t1, l2 is the first instant of t2, and l1 before l2, then t1 starts-before t2 [sbd-1]"
+			(forall (l1 l2 t1 t2)
+				(if
+					(and (instance-of l1 temporal-instant l1) (instance-of l2 temporal-instant l2)
+						(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
+						(first-instant-of l1 t1) (first-instant-of l2 t2)
+						(before l1 l2))
+					(starts-before t1 t2))))
 
-// ******************************************
-// INTERVAL-STARTS / INTERVAL-STARTED-BY 
-// ******************************************
+		(cl:comment "'starts-before' is transitive [sbd-2]"
+			(forall (a b c)
+				(if
+					(and (starts-before a b) (starts-before b c))
+					(starts-before a c))))
 
-
-// For some temporal instants f1, l1, f2, and l2 and temporal intervals t1 and t2, if t2 contains t1, f1 is the first instant of t1, 
-// l1 is the last instant of t1, f2 is the first instant of t2, l2 is the last instant of t2, f1 equals f2, f2 precedes l1, and
-// l1 precedes l2, then t1 starts t2 [ins-1]
-(forall (f1 l1 f2 l2 t1 t2)
-	(if
-		(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
-			(instance-of f2 temporal-instant f2) (instance-of l2 temporal-instant l2)
-			(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
-			(= f1 f2) (f2 precedes l1) (l1 precedes l2))
-		(t1 interval-starts t2)))
-
-
-// The inverse of 'interval-starts' is 'interval-started-by' [ins-2]
-(forall (a b) (iff (interval-starts a b) (interval-started-by b a)))
-
-
-// ******************************************
-// EQUALS
-// ******************************************
-
-
-// For some temporal instants f1, l1, f2, and l2 and temporal intervals t1 and t2, if f1 is the first instant of t1, 
-// l1 is the last instant of t1, f2 is the first instant of t2, l2 is the last instant of t2, f1 equals f2, and l1 equals l2,
-// then t1 equals t2 [eqd-1]
-(forall (f1 l1 f2 l2 t1 t2)
-	(if
-		(and (instance-of f1 temporal-instant f1) (instance-of l1 temporal-instant l1)
-			(instance-of f2 temporal-instant f2) (instance-of l2 temporal-instant l2)
-			(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
-			(= f1 f2) (= l1 l2))
-		(t1 equals t2)))
-
-
-// 'equals' is reflexive [eqd-2]
-(forall (a)
-	(if (exists (t) (instance-of a temporal-interval t)) (equals a a)))
-
-
-// 'equals' is symmetric [eqd-3]
-(forall (a b)
-	(iff (equals a b) (equals b a)))
-
-
-// ******************************************
-// ENDS AFTER
-// ******************************************
-
-
-// For some temporal instants l1 and l2 and temporal intervals t1 and t2, if l1 is the last instant of t1, 
-// l2 is the last instant of t2, and l1 after l2, then t1 ends-after t2 [ead-1]
-(forall (l1 l2 t1 t2)
-	(if
-		(and (instance-of l1 temporal-instant l1) (instance-of l2 temporal-instant l2)
-			(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
-			(l1 last-instant-of t1) (l2 last-instant-of t2) (l1 after l2))
-		(t1 ends-after t2)))
-
-
-// 'ends-after' is transitive [ead-2]
-(forall (a b c)
-	(if
-		(and (a ends-after b) (b ends-after c))
-		(a ends-after c)))
-
-
-// ******************************************
-// STARTS-BEFORE
-// ******************************************
-
-
-// For some temporal instants l1 and l2 and temporal intervals t1 and t2, if l1 is the first instant of t1, 
-// l2 is the first instant of t2, and l1 before l2, then t1 starts-before t2 [sbd-1]
-(forall (l1 l2 t1 t2)
-	(if
-		(and (instance-of l1 temporal-instant l1) (instance-of l2 temporal-instant l2)
-			(instance-of t1 temporal-interval t1) (instance-of t2 temporal-interval t2)
-			(l1 first-instant-of t1) (l2 first-instant-of t2)
-			(l1 before l2))
-		(t1 starts-before t2)))
-
-
-// 'starts-before' is transitive [sbd-2]
-(forall (a b c)
-	(if
-		(and (a starts-before b) (b starts-before c))
-		(a starts-before c)))
-
-		
+		(cl:comment "ends-after has domain 'temporal region' and range 'temporal region' [sbd-3]"
+			(forall (a b)
+			    (if (ends-after a b)
+			    	(and (exists (t) (instance-of a temporal-region t))
+			    	(exists (t) (instance-of b temporal-region t)))))))
