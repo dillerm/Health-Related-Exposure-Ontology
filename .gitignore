@@ -38,3 +38,9 @@ src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
+
+.idea
+*.py
+
+resource_counts.tsv
+src/ontology/metrics.tsv
