@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
@@ -19,7 +20,44 @@
         <dc:title xml:lang="en">HERO Temporal Relations</dc:title>
         <oboInOwl:created_by xml:lang="en">Matthew Diller</oboInOwl:created_by>
     </owl:Ontology>
+    
 
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
 
 
     <!-- 
@@ -33,7 +71,191 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000100 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000110 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000110">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</obo:IAO_0000412>
+        <dc:identifier>223-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">has continuant part at all times</rdfs:label>
+        <skos:definition xml:lang="en">b has continuant part c at all times =Def for all times t, b exists at t implies (b and c are continuants &amp; b is a part of c at t)</skos:definition>
+        <skos:prefLabel xml:lang="en">has continuant part at all times</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000111 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000111">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</obo:IAO_0000412>
+        <dc:identifier>227-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">has proper continuant part at all times</rdfs:label>
+        <skos:definition xml:lang="en">b has proper continuant part c at all times =Def c proper continuant part of b at all times</skos:definition>
+        <skos:prefLabel xml:lang="en">has proper continuant part at all times</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</obo:IAO_0000412>
+        <dc:identifier>202-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
+        <skos:definition xml:lang="en">b has occurrent part c =Def c occurrent part of b</skos:definition>
+        <skos:example xml:lang="en">Mary&apos;s life has occurrent part Mary&apos;s 5th birthday</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000121 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000121">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</obo:IAO_0000412>
+        <dc:identifier>211-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">has temporal part</rdfs:label>
+        <skos:definition xml:lang="en">b has temporal part c =Def c temporal part of b</skos:definition>
+        <skos:example xml:lang="en">Your life has temporal part the first year of your life</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000132">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</obo:IAO_0000412>
+        <dc:identifier>003-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">occurrent part of</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) occurrent part of is a relation between occurrents b and c when b is part of c</skos:definition>
+        <skos:example xml:lang="en">Mary&apos;s 5th birthday is an occurrent part of Mary&apos;s life; the first set of the tennis match is an occurrent part of the tennis match</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000137 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000137">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</obo:IAO_0000412>
+        <dc:identifier>225-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">proper continuant part of at all times</rdfs:label>
+        <skos:definition xml:lang="en">b proper continuant part of c at all times =Def for all times t, b exists at t implies (b continuant part of c at t &amp; not (c proper continuant part of b at t))</skos:definition>
+        <skos:prefLabel xml:lang="en">proper continuant part of at all times</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000139 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000139">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</obo:IAO_0000412>
+        <dc:identifier>078-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">temporal part of</rdfs:label>
+        <skos:definition xml:lang="en">b temporal part of c =Def b occurrent part of c &amp; (b and c are temporal regions) or (b and c are spatiotemporal regions &amp; b temporally projects onto an occurrent part of the temporal region that c temporally projects onto) or (b and c are processes or process boundaries &amp; b occupies a temporal region that is an occurrent part of the temporal region that c occupies)</skos:definition>
+        <skos:example xml:lang="en">Your heart beating from 4pm to 5pm today is a temporal part of the process of your heart beating; the 4th year of your life is a temporal part of your life, as is the process boundary which separates the 3rd and 4th years of your life; the first quarter of a game of football is a temporal part of the whole game</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000176">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</obo:IAO_0000412>
+        <dc:identifier>221-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">continuant part of</rdfs:label>
+        <skos:definition xml:lang="en">b continuant part of c =Def b and c are continuants &amp; there is some time t such that b and c exist at t &amp; b continuant part of c at t</skos:definition>
+        <skos:example xml:lang="en">Milk teeth continuant part of human; surgically removed tumour continuant part of organism</skos:example>
+        <skos:prefLabel xml:lang="en">continuant part of at some time</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000177 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000177">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</obo:IAO_0000412>
+        <dc:identifier>222-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">continuant part of at all times</rdfs:label>
+        <skos:definition xml:lang="en">b continuant part of c at all times =Def for all times t, (b exists at t, implies b continuant part of c at t &amp; t is a temporal region &amp; b and c are continuants)</skos:definition>
+        <skos:example xml:lang="en">Centre of mass of a material entity continuant part of material entity at all times; continuant fiat external boundary of an object continuant part of object at all times.</skos:example>
+        <skos:prefLabel xml:lang="en">continuant part of at all times</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000178 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000178">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</obo:IAO_0000412>
+        <dc:identifier>271-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">has continuant part</rdfs:label>
+        <skos:definition xml:lang="en">b has continuant part c =Def c continuant part of b</skos:definition>
+        <skos:prefLabel xml:lang="en">has continuant part at some time</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000221 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000221">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</obo:IAO_0000412>
+        <dc:identifier>268-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">first instant of</rdfs:label>
+        <skos:definition xml:lang="en">t first instant of t&apos; =Def t is a temporal instant &amp; t&apos; is a temporal region t&apos; &amp; t precedes all temporal parts of t&apos; other than t</skos:definition>
+        <skos:example xml:lang="en">An hour starting at midnight yesterday has first instant midnight yesterday</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000222 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000222">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</obo:IAO_0000412>
+        <dc:identifier>261-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">has first instant</rdfs:label>
+        <skos:definition xml:lang="en">t has first instant t&apos; =Def t&apos; first instant of t</skos:definition>
+        <skos:example xml:lang="en">The first hour of a year has first instant midnight on December 31</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000223 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000223">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</obo:IAO_0000412>
+        <dc:identifier>269-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">last instant of</rdfs:label>
+        <skos:definition xml:lang="en">t last instant of t&apos; =Def t is a temporal instant &amp; t&apos; is a temporal region &amp; all temporal parts of t&apos; other than t precede t</skos:definition>
+        <skos:example xml:lang="en">Last midnight is the last instant of yesterday</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000224 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000224">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</obo:IAO_0000412>
+        <dc:identifier>215-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">has last instant</rdfs:label>
+        <skos:definition xml:lang="en">t has last instant t&apos; =Def t&apos; last instant of t</skos:definition>
+        <skos:example xml:lang="en">The last hour of a year has last instant midnight December 31</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00000002 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000002">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000019"/>
@@ -46,7 +268,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000101 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000003 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000003">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000018"/>
@@ -57,7 +279,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000102 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000007 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000007">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -70,7 +292,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000103 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000008 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000008">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -81,7 +303,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000104 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000009 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000009">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -90,7 +312,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000105 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000010 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000010">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000009"/>
@@ -101,7 +323,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000106 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000011 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000011">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000009"/>
@@ -112,7 +334,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000107 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000012 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000012">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -123,7 +345,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000108 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000013 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000013">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000012"/>
@@ -134,7 +356,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000109 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000014 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000014">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000019"/>
@@ -143,7 +365,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000110 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000015 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000015">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -152,7 +374,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000111 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000016 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000016">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000015"/>
@@ -161,7 +383,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000112 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000017 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000017">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000018"/>
@@ -170,7 +392,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000113 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000018 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000018">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
@@ -181,7 +403,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HERO_00000114 -->
+    <!-- http://purl.obolibrary.org/obo/HERO_00000019 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HERO_00000019">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
@@ -193,5 +415,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
