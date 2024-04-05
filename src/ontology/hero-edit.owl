@@ -14459,32 +14459,6 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/HERO_00000076"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HERO_00000072"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -15056,7 +15030,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15611,7 +15585,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
     <!-- http://purl.obolibrary.org/obo/HERO_00000152 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000152">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200181"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
@@ -15621,7 +15595,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200119"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HERO_00000156"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HERO_00000181"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -15639,7 +15613,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
     <!-- http://purl.obolibrary.org/obo/HERO_00000153 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000153">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200181"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -15746,7 +15720,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -16364,7 +16338,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000240"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An information content entity that expresses that a housing unit is equal to, greater than, or less than some units of some other entity. The home value can be determined from a combination of supply of housing units, demand for housing units, or a personÕs subjective desire to own that housing unit.</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that expresses that a housing unit is equal to, greater than, or less than some units of some other entity. The home value can be determined from a combination of supply of housing units, demand for housing units, or a person&apos;s subjective desire to own that housing unit.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment xml:lang="en">Usually the value is expressed in units of currency, but we leave open the possibility of other items or commodities being used to purchase a housing unit. This value is typically referenced in a financial transaction, payment of debt, or exchange of ownership.</rdfs:comment>
@@ -17897,7 +17871,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000118>approval for SFMNP benefits</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment></rdfs:comment>
-        <rdfs:label>approval for Seniors Farmers Market Nutrition Program benefits</rdfs:label>
+        <rdfs:label>approved for Seniors Farmers Market Nutrition Program benefits</rdfs:label>
     </owl:Class>
     
 
@@ -17911,7 +17885,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000118>approval for SNAP benefits</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment></rdfs:comment>
-        <rdfs:label>approval for Supplemental Nutrition Assistance Program benefits</rdfs:label>
+        <rdfs:label>approved for Supplemental Nutrition Assistance Program benefits</rdfs:label>
     </owl:Class>
     
 
@@ -17925,7 +17899,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000118>approval for WIC benefits</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment></rdfs:comment>
-        <rdfs:label>approval for Special Supplemental Nutrition Program for Women, Infants, and Children benefits</rdfs:label>
+        <rdfs:label>approved for Special Supplemental Nutrition Program for Women, Infants, and Children benefits</rdfs:label>
     </owl:Class>
     
 
@@ -17938,7 +17912,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment>In the US, eligibility for a free breakfast through the School Breakfast Program is determined based on whether their household income is less than or equal to 130% of the poverty threshold for a household of that size.</rdfs:comment>
-        <rdfs:label>approval for free breakfast</rdfs:label>
+        <rdfs:label>approved for free breakfast</rdfs:label>
     </owl:Class>
     
 
@@ -17951,7 +17925,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment>In the US, eligibility for a free lunch through the National School Lunch Program is determined based on whether their household income is less than 130% of the poverty threshold for a household of that size.</rdfs:comment>
-        <rdfs:label>approval for free lunch</rdfs:label>
+        <rdfs:label>approved for free lunch</rdfs:label>
     </owl:Class>
     
 
@@ -17964,7 +17938,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment>In the US, eligibility for a reduced-price lunch through the National School Lunch Program is determined based on whether their household income is between 130% and 185% of the poverty threshold for a household of that size.</rdfs:comment>
-        <rdfs:label>approval for reduced-price lunch</rdfs:label>
+        <rdfs:label>approved for reduced-price lunch</rdfs:label>
     </owl:Class>
     
 
@@ -17977,7 +17951,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment>In the US, eligibility for a reduced-price breakfast through the School Breakfast Program is determined based on whether their household income is between 130% and 185% of the poverty threshold for a household of that size.</rdfs:comment>
-        <rdfs:label>approval for reduced-price breakfast</rdfs:label>
+        <rdfs:label>approved for reduced-price breakfast</rdfs:label>
     </owl:Class>
     
 
@@ -18274,7 +18248,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>Synonyms: count of housing units without a vehicle that are in an urban area more than 1 mile or in a rural area more than 10 miles from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>count of households without a vehicle that are in an urban area more than 1 mile or in a rural area more than 10 miles from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -18644,7 +18618,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>count of Census tract housing units without a vehicle that are more than 1 mile from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>count of Census tract households without a vehicle that are more than 1 mile from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -18658,7 +18632,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>count of Census tract housing units without a vehicle that are more than 10 miles from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>count of Census tract households without a vehicle that are more than 10 miles from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -18672,7 +18646,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>count of Census tract housing units without a vehicle that are more than 20 miles from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>count of Census tract households without a vehicle that are more than 20 miles from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -18686,7 +18660,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>count of Census tract housing units without a vehicle that are more than 0.5 miles from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>count of Census tract households without a vehicle that are more than 0.5 miles from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -18700,7 +18674,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>count of Census tract housing units that are more than 0.5 miles from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: household refers to.</rdfs:comment>
         <rdfs:label>count of Census tract households that are more than 0.5 miles from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -18714,7 +18688,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>count of Census tract housing units</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>count of Census tract households</rdfs:label>
     </owl:Class>
     
@@ -19156,7 +19130,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000401">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021016"/>
-        <obo:IAO_0000115>A duty holder role inhering in a governmental organization that is realized during a National School Lunch Program application process; facilitating the application process; processing and reviewing the application to determine the applicantsÕ eligibility; and reimbursing authorized schools for meals consumed by participating students during a designated lunch time.</obo:IAO_0000115>
+        <obo:IAO_0000115>A duty holder role inhering in a governmental organization that is realized during a National School Lunch Program application process; facilitating the application process; processing and reviewing the application to determine the applicants&apos; eligibility; and reimbursing authorized schools for meals consumed by participating students during a designated lunch time.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>issuer of NSLP benefits</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
@@ -19169,7 +19143,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000402">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021016"/>
-        <obo:IAO_0000115>A duty holder role inhering in a governmental organization that is realized during a School Breakfast Program application process; facilitating the application process; processing and reviewing the application to determine the applicantsÕ eligibility; and reimbursing authorized schools for meals consumed by participating students during a designated breakfast time.</obo:IAO_0000115>
+        <obo:IAO_0000115>A duty holder role inhering in a governmental organization that is realized during a School Breakfast Program application process; facilitating the application process; processing and reviewing the application to determine the applicants&apos; eligibility; and reimbursing authorized schools for meals consumed by participating students during a designated breakfast time.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>issuer of SBP benefits</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
@@ -19182,7 +19156,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000403">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021016"/>
-        <obo:IAO_0000115>A duty holder role inhering in a governmental organization that is realized during a SNAP application process by that organization providing the application, facilitating the application process, processing and reviewing the application to determine the applicantsÕ eligibility, and sending electronic benefits cards to approved applicants.</obo:IAO_0000115>
+        <obo:IAO_0000115>A duty holder role inhering in a governmental organization that is realized during a SNAP application process by that organization providing the application, facilitating the application process, processing and reviewing the application to determine the applicants&apos; eligibility, and sending electronic benefits cards to approved applicants.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>issuer of SNAP benefits</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
@@ -19195,7 +19169,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000404">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021016"/>
-        <obo:IAO_0000115>A duty holder role inhering in a governmental organization that is realized during a Summer Food Service Program application process; facilitating the application process; processing and reviewing the application to determine the applicantsÕ eligibility; and reimbursing authorized schools for meals consumed by participating students during the Summer.</obo:IAO_0000115>
+        <obo:IAO_0000115>A duty holder role inhering in a governmental organization that is realized during a Summer Food Service Program application process; facilitating the application process; processing and reviewing the application to determine the applicants&apos; eligibility; and reimbursing authorized schools for meals consumed by participating students during the Summer.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>issuer of SFSP benefits</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
@@ -19250,7 +19224,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000408">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021016"/>
-        <obo:IAO_0000115>A duty holder role inhering in a state or local governmental organization that is realized during a WIC application process by that organization providing the application; facilitating the application process; processing and reviewing the application to determine the applicantsÕ eligibility; and sending food vouchers, information about nutrition, and providing breast feeding support and education to approved applicants.</obo:IAO_0000115>
+        <obo:IAO_0000115>A duty holder role inhering in a state or local governmental organization that is realized during a WIC application process by that organization providing the application; facilitating the application process; processing and reviewing the application to determine the applicants&apos; eligibility; and sending food vouchers, information about nutrition, and providing breast feeding support and education to approved applicants.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>issuer of WIC benefits</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
@@ -19371,7 +19345,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -19451,7 +19425,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>percent of Census tract housing units without a vehicle that are more than 0.5 miles from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>percent of Census tract households without a vehicle that are more than 0.5 miles from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -19465,7 +19439,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>percent of Census tract housing units without a vehicle that are more than 1 mile from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>percent of Census tract households without a vehicle that are more than 1 mile from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -19479,7 +19453,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>percent of Census tract housing units without a vehicle that are more than 10 miles from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>percent of Census tract households without a vehicle that are more than 10 miles from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -19493,7 +19467,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>percent of Census tract housing units without a vehicle that are more than 20 miles from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>percent of Census tract households without a vehicle that are more than 20 miles from a supermarket, supercenter, or grocery store</rdfs:label>
     </owl:Class>
     
@@ -20175,7 +20149,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118>Synonyms: percent of housing units without a vehicle that are in an urban area more than 1 mile or in a rural area more than 10 miles from a supermarket, supercenter, or grocery store</obo:IAO_0000118>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment>The US Census and USDA seem to use ÔhouseholdÕ and Ôhousing unitÕ interchangeably, but both seem to refer to the same thing that OMRSE: ÔhouseholdÕ refers to.</rdfs:comment>
+        <rdfs:comment>The US Census and USDA seem to use &apos;household&apos; and &apos;housing unit&apos; interchangeably, but both seem to refer to the same thing that OMRSE: &apos;household&apos; refers to.</rdfs:comment>
         <rdfs:label>percent of households without a vehicle that are in an urban area more than 1 mile or in a rural area more than 10 miles from a supermarket, supercenter, or grocery store </rdfs:label>
     </owl:Class>
     
@@ -21325,7 +21299,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000569">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115>A role inhering in a Census tract that is registered with the United States Department of Agriculture as having a population poverty rate of 20% or more, having a median family income that is less than or equal to 80% of the State-wide median family income, or, if the tract is in a metropolitan area, having a median family income that is less than or equal to 80% of the metropolitan areaÕs median family income.</obo:IAO_0000115>
+        <obo:IAO_0000115>A role inhering in a Census tract that is registered with the United States Department of Agriculture as having a population poverty rate of 20% or more, having a median family income that is less than or equal to 80% of the State-wide median family income, or, if the tract is in a metropolitan area, having a median family income that is less than or equal to 80% of the metropolitan area&apos;s median family income.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment></rdfs:comment>
@@ -21455,7 +21429,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000583">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000265"/>
-        <obo:IAO_0000115>A social categorization scheme that is published by the US Health and Human ServicesÕ Federal Policy Guidelines and is based on whether a person is part of a household with a combined income at or below 200% of the Federal poverty threshold.</obo:IAO_0000115>
+        <obo:IAO_0000115>A social categorization scheme that is published by the US Health and Human Services&apos; Federal Policy Guidelines and is based on whether a person is part of a household with a combined income at or below 200% of the Federal poverty threshold.</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment></rdfs:comment>
@@ -21746,6 +21720,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,1,1,2-tetrachloroethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21770,6 +21745,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,1,2-trichloroethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21794,6 +21770,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,1-dimethylhydrazine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21818,6 +21795,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hexachlorocyclohexane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21842,6 +21820,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,2,4-trichlorobenzene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21866,6 +21845,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,2-dibromo-3-chloropropane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21890,6 +21870,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,2-epoxybutane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21914,6 +21895,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-methylaziridine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21938,6 +21920,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,3-butadiene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21962,6 +21945,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,3-dichloropropene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21986,6 +21970,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,3-propane sultone</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22010,6 +21995,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,4-dichlorobenzene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22034,6 +22020,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,4-dioxane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22058,6 +22045,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-acetylaminofluorene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22082,6 +22070,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2,4,5-trichlorophenol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22106,6 +22095,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2,4,6-trichlorophenol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22130,6 +22120,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2,4-D</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22154,6 +22145,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2,4-dinitrophenol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22178,6 +22170,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2,4-dinitrotoluene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22202,6 +22195,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2,4-diaminotoluene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22226,6 +22220,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2,4-toluene diisocyanate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22250,6 +22245,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-nitropropane </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22274,6 +22270,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 3,3&apos;-dichlorobenzidine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22298,6 +22295,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 3,3&apos;-dimethoxybenzidine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22322,6 +22320,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 3,3&apos;-dimethylbenzidine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22346,6 +22345,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 4,4&apos;-methylene-bis-(2-chloroaniline)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22370,6 +22370,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 4,4&apos;-diaminodiphenylmethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22394,6 +22395,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of diphenylmethane-4,4&apos;-diisocyanate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22418,6 +22420,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 4,6-dinitro-o-cresol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22442,6 +22445,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of biphenyl-4-amine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22466,6 +22470,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 4-(dimethylamino)azobenzene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22490,6 +22495,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 4-nitrobiphenyl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22514,6 +22520,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 4-nitrophenol </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22538,6 +22545,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acenaphthene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22562,6 +22570,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acenaphthylene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22586,6 +22595,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acetaldehyde</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22610,6 +22620,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acetamide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22634,6 +22645,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acetonitrile</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22658,6 +22670,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acetophenone</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22682,6 +22695,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acrylamide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22706,6 +22720,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acrylic acid</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22730,6 +22745,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acrylonitrile</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22754,6 +22770,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of allyl chloride</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22778,6 +22795,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of aniline</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22802,6 +22820,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of o-anisidine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22826,6 +22845,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of anthracene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22850,6 +22870,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of antimony(0)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22874,6 +22895,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of arsenic atom</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22898,6 +22920,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of asbestos</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22922,6 +22945,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of tetraphene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22946,6 +22970,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzene </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22970,6 +22995,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzidine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -22994,6 +23020,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzo[a]fluoranthene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23018,6 +23045,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzo(c)phenanthrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23042,6 +23070,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzo[e]pyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23066,6 +23095,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzo[ghi]fluoranthene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23090,6 +23120,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzo[ghi]perylene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23114,6 +23145,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzo[a]pyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23138,6 +23170,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzo[b]fluoranthene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23162,6 +23195,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzo[j]fluoranthene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23186,6 +23220,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzo[k]fluoranthene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23210,6 +23245,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of (trichloromethyl)benzene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23234,6 +23270,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of benzyl chloride </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23258,6 +23295,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of beryllium(0)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23282,6 +23320,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of beta-propiolactone</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23306,6 +23345,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of biphenyl </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23330,6 +23370,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of bis(2-ethylhexyl)phthalate </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23354,6 +23395,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of bis(chloromethyl) ether</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23378,6 +23420,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of bromoform </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23402,6 +23445,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of cadmium atom</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23426,6 +23470,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of calcium cyanamide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23450,6 +23495,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of captan</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23474,6 +23520,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of carbaryl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23498,6 +23545,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of carbazole</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23522,6 +23570,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of carbon disulfide </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23546,6 +23595,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of tetrachloromethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23570,6 +23620,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of carbonyl sulfide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23594,6 +23645,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of catechol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23618,6 +23670,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-ethoxyethanol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23642,6 +23695,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chlordane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23666,6 +23720,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dichlorine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23690,6 +23745,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chloroacetic acid</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23714,6 +23770,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chlorobenzene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23738,6 +23795,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chlorobenzilate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23762,6 +23820,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chloroform</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23786,6 +23845,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chloromethyl methyl ether</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23810,6 +23870,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chloroprene </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23834,6 +23895,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chromic acid</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23858,6 +23920,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chromium(3+)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23882,6 +23945,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chromium(6+)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23906,6 +23970,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chromium trioxide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23930,6 +23995,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chrysene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23954,6 +24020,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of coal-tar pitch</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23978,6 +24045,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of cobalt atom</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24002,6 +24070,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of cresol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24026,6 +24095,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of o-cresol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24050,6 +24120,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of m-cresol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24074,6 +24145,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of p-cresol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24098,6 +24170,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of cumene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24122,6 +24195,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of cyanide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24134,18 +24208,6 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>atmospheric aggregate of 1,2-dibromo-3-chloropropane</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/HERO_00000805 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00000805">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302867"/>
-        <obo:IAO_0000115>A predicted data item that estimates the amount of some aggregate of 1,2-dibromo-3-chloropropane in some volume of air in a geographical region.</obo:IAO_0000115>
-        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
-        <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:label>regional concentration of 1,2-dibromo-3-chloropropane</rdfs:label>
     </owl:Class>
     
 
@@ -24170,6 +24232,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 4,4&apos;-dichlorobiphenyl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24194,6 +24257,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of DDE</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24218,6 +24282,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of decachlorobiphenyl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24242,6 +24307,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-chlorobiphenyl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24266,6 +24332,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of diazomethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24290,6 +24357,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dibenzofurans</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24314,6 +24382,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dibenz[a,h]acridine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24338,6 +24407,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dibenz[a,j]acridine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24362,6 +24432,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dibenzo[a,e]pyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24386,6 +24457,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dibenz[a,h]anthracene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24410,6 +24482,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dibenzo[a,i]pyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24434,6 +24507,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dibenzo[a,h]pyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24458,6 +24532,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dibenzo[a,l]pyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24482,6 +24557,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 7H-dibenzo[c,g]carbazole</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24506,6 +24582,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dibutyl phthalate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24530,6 +24607,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of bis(2-chloroethyl)ether</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24554,6 +24632,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dichlorvos</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24578,6 +24657,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of diesel exhaust</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24602,6 +24682,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of diethanolamine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24626,6 +24707,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of diethyl sulfate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24650,6 +24732,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1-ethoxy-2-(2-ethoxyethoxy)ethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24674,6 +24757,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of diglyme</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24698,6 +24782,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of diethylene glycol monoethyl ether</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24722,6 +24807,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-(2-methoxyethoxy)ethanol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24746,6 +24832,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,2-dimethoxyethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24770,6 +24857,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 7,12-dimethyltetraphene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24794,6 +24882,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of N,N-dimethylformamide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24818,6 +24907,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dimethyl phthalate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24842,6 +24932,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dimethylcarbamoyl chloride</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24866,6 +24957,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of epichlorohydrin </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24890,6 +24982,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of ethyl acrylate </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24914,6 +25007,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of urethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24938,6 +25032,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chloroethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24962,6 +25057,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of ethylbenzene </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -24986,6 +25082,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,2-dibromoethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25010,6 +25107,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,2-dichloroethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25034,6 +25132,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of ethylene glycol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25058,6 +25157,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-methoxyethanol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25082,6 +25182,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of oxirane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25106,6 +25207,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of aziridine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25130,6 +25232,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of ethylene glycol bis(2-aminoethyl)tetraacetic acid</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25154,6 +25257,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,1-dichloroethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25178,6 +25282,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of fluoranthene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25202,6 +25307,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of fluorene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25226,6 +25332,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of formaldehyde</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25250,6 +25357,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of glycol ethers</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25274,6 +25382,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of heptachlor</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25298,6 +25407,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of heptachlorobiphenyl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25322,6 +25432,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hexachlorobenzene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25346,6 +25457,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hexachlorobiphenyl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25370,6 +25482,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hexachloro-1,3-butadiene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25394,6 +25507,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hexachloroethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25418,6 +25532,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hexamethylene diisocyanate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25442,6 +25557,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hexamethylphosphoric triamide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25466,6 +25582,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hexane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25490,6 +25607,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hydrazine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25514,6 +25632,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hydrochloric acid</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25538,6 +25657,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hydrofluoric acid</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25562,6 +25682,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hydroquinone</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25586,6 +25707,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of isophorone</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25610,6 +25732,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of lead(0)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25634,6 +25757,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of manganese(0)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25658,6 +25782,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of mercury(0)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25682,6 +25807,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of methanol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25706,6 +25832,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of methoxychlor</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25730,6 +25857,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of bromomethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25754,6 +25882,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of iodomethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25778,6 +25907,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of methyl isobutyl ketone</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25802,6 +25932,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of methyl isocyanate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25826,6 +25957,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of methyl methacrylate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25850,6 +25982,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of dichloromethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25874,6 +26007,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of N,N-dimethyl aniline</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25898,6 +26032,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of naphthalene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25922,6 +26057,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of nitrobenzene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25946,6 +26082,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of N-nitrosodimethylamine </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25970,6 +26107,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of N-Nitrosomorpholine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -25994,6 +26132,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of N-methyl-N-nitrosourea</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26018,6 +26157,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of o-toluidine </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26042,6 +26182,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of parathion</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26066,6 +26207,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of pentachloronitrobenzene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26090,6 +26232,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of pentachlorophenol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26114,6 +26257,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of phenol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26138,6 +26282,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of phosphane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26162,6 +26307,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of phosphorus atom</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26186,6 +26332,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of phthalic anhydride</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26210,6 +26357,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of polychlorobiphenyl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26234,6 +26382,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,4-phenylenediamine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26258,6 +26407,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of propanal</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26282,6 +26432,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of propoxur</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26306,6 +26457,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,2-dichloropropane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26330,6 +26482,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of polycyclic arene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26354,6 +26507,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of quinoline</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26378,6 +26532,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of quinone</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26402,6 +26557,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of selenium atom</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26426,6 +26582,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of styrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26450,6 +26607,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of styrene oxide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26474,6 +26632,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of tetrachloroethylene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26498,6 +26657,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of toluene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26522,6 +26682,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of toxaphene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26546,6 +26707,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of trichloroethene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26570,6 +26732,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of triethylamine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26594,6 +26757,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of triglyme</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26618,6 +26782,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of trifluralin</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26642,6 +26807,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of vinyl acetate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26666,6 +26832,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of vinyl bromide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26690,6 +26857,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of chloroethene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26714,6 +26882,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,1-dichloroethene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26738,6 +26907,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of o-xylene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26762,6 +26932,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of m-xylene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26786,6 +26957,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of p-xylene </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26810,6 +26982,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of triethylene glycol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26834,6 +27007,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of pyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26858,6 +27032,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hydrogen cyanide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26882,6 +27057,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of indeno[1,2,3-c,d]pyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26906,6 +27082,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of triethylene glycol monomethyl ether</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26930,6 +27107,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 3-methylcholanthrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26954,6 +27132,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 5-methylchrysene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -26978,6 +27157,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1-methylnaphthalene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27002,6 +27182,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-methylnaphthalene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27026,6 +27207,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1-methylphenanthrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27050,6 +27232,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1-methylpyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27074,6 +27257,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1-nitropyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27098,6 +27282,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of pentachlorobiphenyl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27122,6 +27307,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of perylene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27146,6 +27332,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of phenanthrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27170,6 +27357,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-phenoxyethanol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27194,6 +27382,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of methyl chloride</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27218,6 +27407,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of carbon monoxide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27242,6 +27432,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of soot</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27266,6 +27457,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of ammonium</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27290,6 +27482,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of nitrate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27314,6 +27507,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of organic matter</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27338,6 +27532,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of sulfate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27362,6 +27557,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of sea salt</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27386,6 +27582,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of mineral dust</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27410,6 +27607,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of glass wool</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27434,6 +27632,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,2-diphenylhydrazine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27458,6 +27657,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-hexoxyethanol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27482,6 +27682,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-propoxyethyl acetate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27506,6 +27707,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-butoxyethanol acetate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27530,6 +27732,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of butyl carbitol acetate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27554,6 +27757,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of carbitol acetate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27578,6 +27782,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-(2-Butoxyethoxy)ethanol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27602,6 +27807,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of diethylene glycol monohexyl ether</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27626,6 +27832,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-propoxyethanol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27650,6 +27857,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-methoxyethyl acetate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27674,6 +27882,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of coal tar</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27698,6 +27907,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of fine mineral fibers</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27722,6 +27932,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of slagwool</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27746,6 +27957,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of rockwool</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27770,6 +27982,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of diesel particulate matter</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27794,6 +28007,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of coke oven emission</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27818,6 +28032,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of nickel refinery dust</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27842,6 +28057,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of ethylene glycol mono-sec-butyl ether</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27866,6 +28082,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of triethylene glycol monobutyl ether</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27890,6 +28107,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-chloroacetophenone</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27914,6 +28132,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-ethoxyethyl acetate</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27938,6 +28157,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-chloronaphthalene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27962,6 +28182,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1-ethoxy-2-(2-methoxyethoxy)ethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -27986,6 +28207,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of ethoxytriglycol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28010,6 +28232,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of ethylene thiourea </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28034,6 +28257,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of hexachlorocyclopentadiene </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28058,6 +28282,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of monomethylhydrazine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28082,6 +28307,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of nickel oxide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28106,6 +28332,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of titanium tetrachloride </rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28130,6 +28357,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2,4,4&apos;-trichlorobiphenyl</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28154,6 +28382,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 9-methylanthracene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28178,6 +28407,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 12-methylbenz(a)anthracene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28202,6 +28432,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1-methylbenzopyrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28226,6 +28457,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2-methylphenanthrene</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28250,6 +28482,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of methyl tert-butyl ether</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28274,6 +28507,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of maleic anhydride</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28310,6 +28544,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of acrolein</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28334,6 +28569,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 2,2,4-trimethylpentane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28358,6 +28594,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of 1,1,1-trichloroethane</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28382,6 +28619,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of ozone</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28406,6 +28644,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of nitrogen dioxide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28430,6 +28669,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of fine particulate matter (PM2.5)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28454,6 +28694,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of inhalable particles (PM10)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28478,6 +28719,7 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label>regional concentration of sulfur dioxide</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -28500,14 +28742,24 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001176">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000076"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000260"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GEO_000000372"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000076"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000260"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GEO_000000372"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -29623,6 +29875,120 @@ Namely, how to characterize the threshold of ingredients that make for multi-com
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">regional concentration of chemical compound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00001250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000115>An object aggregate consisting of isooctane that is located in a portion of air that is in a geographical region.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">atmospheric aggregate of isooctane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00001251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An object aggregate consisting of nickel atoms that is located in a portion of air that is in a geographical region.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">atmospheric aggregate of nickel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00001252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">An object aggregate consisting of xylene that is located in a portion of air that is in a geographical region.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">atmospheric aggregate of xylene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00001253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000151"/>
+        <obo:IAO_0000115 xml:lang="en">A percent data item that is the output of a percent calculation of the ratio of the counts of business land that has been no-stat for 3 months or less to total USPS-designated land.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">percent of business land designated by USPS as no-stat for 3 months to less</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00001254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000151"/>
+        <obo:IAO_0000115 xml:lang="en">A percent data item that is the output of a percent calculation of the ratio of the counts of business land that has been no-stat for 3-6 months to total USPS-designated land.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">percent of business land designated by USPS as no-stat for 3 months to 6 months</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00001255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000151"/>
+        <obo:IAO_0000115 xml:lang="en">A percent data item that is the output of a percent calculation of the ratio of the counts of business land that has been no-stat for 6-12 months to total USPS-designated land.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">percent of business land designated by USPS as no-stat for 6 months to 12 months</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00001256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000151"/>
+        <obo:IAO_0000115 xml:lang="en">A percent data item that is the output of a percent calculation of the ratio of the counts of business land that has been no-stat for 12-24 months to total USPS-designated land.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">percent of business land designated by USPS as no-stat for 12 months to 24 months</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00001257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000151"/>
+        <obo:IAO_0000115 xml:lang="en">A percent data item that is the output of a percent calculation of the ratio of the counts of business land that has been no-stat for 24-36 months to total USPS-designated land.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">percent of business land designated by USPS as no-stat for 24 months to 36 months</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HERO_00001258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HERO_00001258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HERO_00000151"/>
+        <obo:IAO_0000115 xml:lang="en">A percent data item that is the output of a percent calculation of the ratio of the counts of business land that has been no-stat for 36 months or longer to total USPS-designated land.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">percent of business land designated by USPS as no-stat for 36 months or longer</rdfs:label>
     </owl:Class>
     
 
